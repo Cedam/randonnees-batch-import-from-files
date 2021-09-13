@@ -1,7 +1,6 @@
 package org.cedam.application.randonnees.batch.importfromfiles.controller;
 
 import lombok.extern.log4j.Log4j2;
-import lombok.extern.slf4j.Slf4j;
 import org.cedam.application.randonnees.batch.importfromfiles.BatchLauncher;
 import org.springframework.batch.core.BatchStatus;
 import org.springframework.batch.core.JobParametersInvalidException;
@@ -23,7 +22,7 @@ public class ImportController {
 
     @GetMapping
     public BatchStatus load() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
-        log.info("Batch demarré à la demande");
+        log.info("Batch démarré à la demande");
         return batchLauncher.run();
     }
 }

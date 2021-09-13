@@ -20,6 +20,9 @@ public interface TrekServiceProxy {
     @GetMapping(value = "/{id}")
     TrekDto getById(@PathVariable("id") long id);
 
+    @GetMapping(value = "byname/{name}")
+    TrekDto getByName(@PathVariable("name") String name);
+
     @PostMapping(value = "/save")
     TrekDto save(@RequestBody TrekDto trek);
 

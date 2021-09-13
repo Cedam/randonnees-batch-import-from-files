@@ -1,24 +1,23 @@
 package org.cedam.application.randonnees.batch.importfromfiles.dto;
 
-import org.springframework.stereotype.Service;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import org.springframework.stereotype.Service;
 
 @Service
 @Getter
 @Setter
 @ToString
-public class DayDto {
+public class LineDayDto {
 
 	private String number;
 
-	private TrekDto trek;
+	private String trekName;
 
 	@Override
 	public String toString() {
-		return String.format("%s (Trek : %s)", number, trek.toString());
+		return String.format("%s %s", number, trekName);
 	}
 
 }

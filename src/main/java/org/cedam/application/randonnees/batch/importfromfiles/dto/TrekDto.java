@@ -25,4 +25,9 @@ public class TrekDto {
 
 	private List days = new ArrayList<DayDto>();
 
+	@Override
+	public String toString() {
+		return String.format("%d %s %x %s", id, name, year, location);
+	}
+
 }

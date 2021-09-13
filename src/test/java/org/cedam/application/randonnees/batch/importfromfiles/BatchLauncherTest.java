@@ -4,10 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RandonneesBatchImportFromFilesApplicationTests {
+class BatchLauncherTest {
 
-	@Test
-	void contextLoads() {
-	}
+
 
 }
