@@ -10,14 +10,17 @@
 		<version>2.4.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>org.cedam.application.randonnees.batch</groupId>
 	<artifactId>randonnees-batch-import-from-files</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>randonnees-batch-import-from-files</name>
 	<description>Import randonnees from files </description>
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
